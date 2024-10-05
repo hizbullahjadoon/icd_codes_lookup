@@ -1,0 +1,8 @@
+chroma-hnswlib==0.7.6
+chromadb==0.5.11
+streamlit==1.39.0
+tenacity==9.0.0
+pandas==2.2.2
+pandas-datareader==0.10.0
+pandas-gbq==0.23.2
+pandas-stubs==2.2.2.240909
