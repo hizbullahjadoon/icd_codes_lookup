@@ -1,3 +1,2 @@
 chromadb==0.5.9
 streamlit==1.32.0
-
