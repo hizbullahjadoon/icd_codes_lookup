@@ -4,7 +4,6 @@ Created on Wed Oct  2 10:24:38 2024
 
 @author: Hizbullah Jadoon
 """
-!sudo apt install python3
 import streamlit as st
 import chromadb
 import pandas as pd
