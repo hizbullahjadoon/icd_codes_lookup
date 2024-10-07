@@ -32,7 +32,6 @@ bigquery-magics==0.2.0
 bleach==6.1.0
 blinker==1.4
 blis==0.7.11
-blosc2==2.0.0
 bokeh==3.4.3
 Bottleneck==1.4.0
 bqplot==0.12.43
