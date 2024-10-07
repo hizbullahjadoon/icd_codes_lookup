@@ -18,14 +18,7 @@ import gc
 # Step 1: Initialize the PersistentClient and specify a directory for storing the data
 client = chromadb.PersistentClient(path="./chroma_persist")  # Specify your directory
 collection = client.create_collection("icd_codes_collection")
-'''
-# Step 2: Check if the collection exists, create it if not
-#collections = client.list_collections()
-if "icd_codes_collection" not in [col.name for col in collections]:
-    collection = client.create_collection("icd_codes_collection")
-else:
-    collection = client.get_collection("icd_codes_collection")
-'''
+
 # Step 3: Load your CSV file containing ICD codes and descriptions
 df = pd.read_csv("cleaned_icd_codes.csv")
 
