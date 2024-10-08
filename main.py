@@ -12,15 +12,18 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 import chromadb
 import pandas as pd
-
+import os
 import gc
 
 # Step 1: Initialize the PersistentClient and specify a directory for storing the data
 client = chromadb.PersistentClient(path="./chroma_persist")  # Specify your directory
 collection = client.create_collection("icd_codes_collection")
 
+file_path = os.path.join(os.path.dirname(__file__), 'cleaned_icd_codes.csv')
+df = pd.read_csv(file_path)
+
 # Step 3: Load your CSV file containing ICD codes and descriptions
-df = pd.read_csv("cleaned_icd_codes.csv")
+#df = pd.read_csv("cleaned_icd_codes.csv")
 
 # Assuming last_index is known or retrieved from somewhere
 last_index = 0  # Set this to the last processed index
