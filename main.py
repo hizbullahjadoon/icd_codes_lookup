@@ -10,7 +10,7 @@ import chromadb
 import pandas as pd
 
 # Initialize the ChromaDB Persistent Client
-client = chromadb.PersistentClient(path="./chroma_persist")  # Path to your persistent storage
+client = chromadb.PersistentClient(path="./chroma_persist1")  # Path to your persistent storage
 collection = client.get_collection("icd_codes_collection")  # Load the existing collection
 
 # Streamlit App Title
