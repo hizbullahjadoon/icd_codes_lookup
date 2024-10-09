@@ -14,7 +14,7 @@ import chromadb
 import pandas as pd
 import os
 import gc
-
+'''
 # Step 1: Initialize the PersistentClient and specify a directory for storing the data
 client = chromadb.PersistentClient(path="./chroma_persist")  # Specify your directory
 collection = client.create_collection("icd_codes_collection")
@@ -54,7 +54,7 @@ for start_idx in range(last_index,len(df), batch_size):
 print(f"Processed up to index Exiting.")
 
 print("ICD codes have been added to the persistent collection successfully!")
-
+'''
 # Initialize the ChromaDB Persistent Client
 client = chromadb.PersistentClient(path="./chroma_persist")  # Path to your persistent storage
 collection = client.get_collection("icd_codes_collection")  # Load the existing collection
